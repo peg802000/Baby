@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="395">
+                                <rect key="frame" x="50" y="246" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="600"/>
+                                    <constraint firstAttribute="height" constant="90" id="601"/>
+                                </constraints>
+                                <state key="normal" title="Left"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="600"/>
+                                        <exclude reference="601"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="600"/>
+                                        <include reference="601"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="BtLeft_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1830"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="597">
+                                <rect key="frame" x="274" y="246" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="700"/>
+                                    <constraint firstAttribute="height" constant="90" id="701"/>
+                                </constraints>
+                                <state key="normal" title="Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="700"/>
+                                        <exclude reference="701"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="700"/>
+                                        <include reference="701"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="BtRight_TouchUpInside:" destination="BYZ-38-t0r" id="4111" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1381">
+                                <rect key="frame" x="60" y="366" width="70" height="70"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtPauCon_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1382"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="3413" firstItem="1381" firstAttribute="width" constant="70"/>
+                                    <constraint id="3416" firstAttribute="height" constant="70"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1383" misplaced="YES">
+                                <rect key="frame" x="284" y="355" width="70" height="70"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="2949" firstAttribute="width" constant="70"/>
+                                    <constraint id="2950" firstAttribute="height" constant="70"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="BtStop_TouchUpInside:" destination="BYZ-38-t0r" id="3655" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2052" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="86" y="474" width="241" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="395" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="598">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="395" secondAttribute="bottom" constant="278" id="599">
+                                <variation key="heightClass=regular-widthClass=compact" constant="400"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="597" secondAttribute="trailing" constant="83" id="602">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="597" secondAttribute="bottom" constant="297" id="603">
+                                <variation key="heightClass=regular-widthClass=compact" constant="400"/>
+                            </constraint>
+                            <constraint id="2947" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1383" secondAttribute="trailing" constant="60"/>
+                            <constraint id="2948" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1383" secondAttribute="bottom" constant="300"/>
+                            <constraint id="3414" firstItem="1381" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60"/>
+                            <constraint id="3415" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1381" secondAttribute="bottom" constant="300"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="395"/>
+                                <exclude reference="597"/>
+                                <exclude reference="1381"/>
+                                <exclude reference="1383"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="598"/>
+                                <exclude reference="599"/>
+                                <exclude reference="602"/>
+                                <exclude reference="603"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="395"/>
+                                <include reference="597"/>
+                                <include reference="1381"/>
+                                <include reference="1383"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="598"/>
+                                <include reference="599"/>
+                                <include reference="602"/>
+                                <include reference="603"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="BtLeft" destination="395" id="name-outlet-395"/>
+                        <outlet property="BtPauCon" destination="1381" id="name-outlet-1381"/>
+                        <outlet property="BtRight" destination="597" id="name-outlet-597"/>
+                        <outlet property="BtStop" destination="1383" id="name-outlet-1383"/>
+                        <outlet property="LbTimer" destination="2052" id="name-outlet-2052"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
